@@ -52,7 +52,7 @@
         <form classes="m-auto p-2 w-100" action="/requerimentos/novo" method="POST">
           <div class="form-group">
             <label for="inputDiscipina">Disciplina</label>
-            <select class="form-control" name="disciplina" id="inputDisciplina">
+            <select class="form-control" name="disciplina" id="inputDisciplina" required>
                <option value="">Selecione uma disciplina</option>
                <% disciplinas.forEach(function(disciplina, index) { %>
                <option value="<%= disciplina.id %> - <%= disciplina.nome %>"><%= disciplina.id %> - <%= disciplina.nome %></option>
